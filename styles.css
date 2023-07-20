@@ -1,0 +1,168 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+header {
+  display: flex;
+}
+.container1 {
+  background-image: url("/images/desktop-image-hero-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 500px; */
+  position: relative;
+  z-index: 100;
+  width: 190%;
+}
+nav {
+  display: flex;
+  gap: 80px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+}
+.topnav {
+  display: flex;
+  gap: 30px;
+}
+.topnav a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu {
+  display: none;
+}
+a:hover {
+  border-bottom: 1px solid #fff;
+}
+.container2 {
+  background-color: #fff;
+  color: #000;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.innercon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: 80%;
+  gap: 20px;
+}
+.typoc1 {
+  font-size: clamp(35px, 2.5vw, 70px);
+  font-weight: 800;
+}
+.typoc2 {
+  color: hsl(0, 0%, 27%);
+  font-size: 12px;
+}
+.typoc3 {
+  font-size: 30px;
+  letter-spacing: 7px;
+}
+.shop {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.svg img {
+  width: 60%;
+}
+.containerb{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.containera  {
+  width: 100%;
+}
+.containerc {
+  width: 100%;
+}
+
+article {
+  display: flex;
+  /* height: inherit; */
+}
+.typoa {
+  font-size: clamp(15px,2.5vw,35px);
+  font-weight: 400;
+}
+@media  screen and (max-width:870px){
+  .container1 {
+    background-image: url("./images/mobile-image-hero-1.jpg");
+  }
+}
+@media  screen and (max-width:750px) {
+  header {
+    flex-direction: column;
+
+  }
+  .container1 {
+    background-size: contain;
+    width:auto;
+  }
+  article {
+    flex-direction: column;
+  }
+}
+@media  screen and (max-width:425px) {
+  .container1 {
+    height: 408px;
+  }
+  .topnav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .container2 {
+    height: 323px;
+  }
+  .innercon {
+    gap: 10px;
+    align-items: start;
+  }
+  .shop {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media  screen and (max-width:320px) {
+  .container1 {
+    height: 308px;
+  }
+  .innercon {
+    width: 95%;
+  }
+
+}
+
