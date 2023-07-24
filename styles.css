@@ -31,7 +31,7 @@ header {
   background-image: url("/images/desktop-image-hero-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 500px; */
+  height: 500px;
   position: relative;
   z-index: 100;
   width: 190%;
