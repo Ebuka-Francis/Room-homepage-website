@@ -134,9 +134,9 @@ article {
     flex-direction: column;
   }
 }
-@media  screen and (max-width:425px) {
+@media  screen and (max-width:750px) {
   .container1 {
-    height: 408px;
+    height: 517px;
   }
   .topnav {
     display: none;
